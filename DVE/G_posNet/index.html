@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>prova_posNet</title>
+	<meta name="description" content="Creative Coding">
+	<meta name="author" content="Chiara">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="black">                            <!-- Chrome, Firefox OS and Opera -->
+	<meta name="msapplication-navbutton-color" content="black">          <!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- iOS Safari -->
+	<!--<link rel="apple-touch-icon" href="icons/icon_192.png">-->
+	<!--<link rel="shortcut icon"    href="icons/icon_32.png">-->
+	<!-- load ml5.js -->
+	<!-- <link rel="stylesheet" href="../../css/style.css"> -->
+
+	<style type="text/css">
+		body{
+			background-color: black;
+			color: white;	
+		}
+
+		@font-face {
+			font-family: ‘Font’;
+			src: url('KyivTypeSans.ttf') format('truetype-variations');
+			font-weight: 0 1000;
+			color: white;
+		}
+
+
+
+		#text {
+			position: absolute;
+			/*left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0; */
+			width: 100vw;
+			height:100vh;
+
+			font-family: ‘Font’;
+			text-align: center;
+			padding: 30% 0;
+	
+			color: white;
+			margin: 0;
+			
+
+			font-variation-settings: 'CONT' 100;
+			font-variation-settings: 'wght' 100;
+		}
+		</style>
+
+</head>
+
+<body class="disable-select disable-scroll">
+
+	<!--per creare server locale-->
+	<!--<script src="/socket.io/socket.io.js"></script>-->
+
+	<div id="text">G</div>
+
+	<!-- <script src="../../js/lib/p5/p5.min.js"></script> -->
+	<!-- <script src="../../../js/common.js"></script>  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script> -->
+	<script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+
+	<script type="text/javascript">
+		document.ontouchmove = function(e){
+			e.preventDefault();
+		}
+		document.ontouchmove = function(e){
+		 	e.preventDefault();
+		}
+	</script>
+	
+	<!--<script src="lib/p5.sound.min.js"></script>-->
+
+	<script src="main.js" type="text/javascript"></script>
+	<!-- Listener che blocca il "bounce" -->
+	<div class="debug"></div>
+
+</body>
+</html>
+

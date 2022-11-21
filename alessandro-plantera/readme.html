@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alessandro Plantera – Tears</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Repository for the 2022 course play-pause-rewind shuffle for SUPSI Bachelor of Arts SUPSI in Visual communication">
+    <meta name="keywords" content="">
+    <meta name="language" content="english">
+    <meta name="web_author" content="Name surname">
+    <meta name="copyright" content="Name surname">
+    <link rel="icon" href="src/img/fav.png">
+    <link href="src/readme.css" rel="stylesheet" />
+
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <a href="https://github.com/leonardoa/play-pause-rewind-shuffle/">Back</a>
+    </div>
+    <div id="wrapper">
+        <h1>Alessandro Plantera<br />
+            Tears</h1>
+        <p class="abstract">
+            During a workshop held at the fab lab in collaboration with the microbiology laboratory, participants have
+            produced
+            photos and videos of tears observed under the microscope. The aim is to use this footage to create an
+            interactive
+            environment that could make explorable, in a more aesthetic and less scientific key, two of the
+            videos made. So you can analyze frame by frame how the crystallization of tears happens in contact with air,
+            or generally
+            how tears under microscope vision appear.
+
+        </p>
+        <ul>
+            <li><a href="https://aleplante.github.io/tears/">Link website</a></li>
+            <li><a href="https://github.com/leonardoa/play-pause-rewind-shuffle/">Github</a></li>
+        </ul>
+        <h1 class="title">Tears</h1>
+        <img src="src/img/14.png" alt="immagine composta" />
+
+        <h1 class="title">Disassembled object</h1>
+        <div class="images">
+            <img src="src/img/Red/0.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/10.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/20.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/21.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/22.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/23.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/24.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/25.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/26.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/27.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/28.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/29.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/30.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/34.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/50.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/60.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/70.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/80.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/90.jpg" alt="immagine scomposta" />
+            <img src="src/img/Red/107.jpg" alt="immagine scomposta" />
+        </div>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">WEB PLATFORM</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/0B_Demo.mp4" type="video/mp4">
+        </video>
+        <p>
+            A short demo of how gestures works to control "play, pause, rewind and shuffle "
+        </p>
+        <h1 class="title">Play</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/14_Next.mp4" type="video/mp4">
+        </video>
+        <p>
+            Instructions: no poses activates: Play.
+        </p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Pause</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/15_Pause.mp4" type="video/mp4">
+        </video>
+        <p>
+            Instructions: right hand raised activates: Pause.
+        </p>
+        <h1 class="title">How Does Pose Estimation Works</h1>
+        <img src="src/img/posenet.png" alt="play 1" />
+        <p>
+            <a href="https://www.baeldung.com/cs/pose-estimation">www.baeldung.com</a><br>
+            "In photos or videos, human pose estimation recognizes and categorizes the positions of human body
+            components
+            and joints. To represent and infer human body positions in 2D and 3D space, a model-based technique is
+            typically used. One particular class of flexible objects includes people. Keypoints will be in different
+            positions concerning others when we bend our arms or legs.
+            </br>
+            </br>
+            The goal of human pose estimation is to foretell the positions of joints and body parts in still photos and
+            moving pictures. Knowing a person’s body pose is essential for identifying actions since certain human
+            behaviors frequently influence pose motions.
+            </br>
+            </br>
+            Human pose estimation involves describing the joints of the human body, such as the wrist, shoulder, knees,
+            eyes, ears, ankles, and arms, which are crucial in pictures and videos that can depict a person’s position."
+        </p>
+        <h1 class="title">Rewind</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/16_Rewind.mp4" type="video/mp4">
+        </video>
+        <p>
+            Instructions: left hand raised activates: Rewind.
+        </p>
+
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Shuffle</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/18_Random.mp4" type="video/mp4">
+        </video>
+        <p class="caption">
+            Instructions: no person detected activates: Shuffle.
+        </p>
+
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Step By Step Process</h1>
+        <h1 class="title">Figma Protype</h1>
+        <img src="src/img/1_A.png" alt="immagine scomposta" />
+        <img src="src/img/2.png" alt="immagine scomposta" />
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Pre & Post Video Color Grading </h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/24_PreVsPost_1.mp4" type="video/mp4">
+        </video>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/25_PreVsPost_2.mp4" type="video/mp4">
+        </video>
+        <p>Both videos have been color-graded to make them more homogeneous and make the animation perceptually
+            smoother.</p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Videos Frame By Frame Export in PNGs </h1>
+        <img src="src/RedVideo/23_FrameByFrame.png" alt="immagine scomposta" / <video controls autoplay muted loop>
+        <source src="src/RedVideo/26_FrameByFrame.mp4" type="video/mp4">
+        </video>
+        <p>For each video, one frame was extracted every 5 seconds in order to have a dataset of images. </p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">Photoshop "Crop And Center IMGs" Batch </h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/8_PSBatchCrop.mp4" type="video/mp4">
+        </video>
+        <p>
+            I had to create a micro script on photoshop to center all the frames extracted from the 2 videos used, <br> and to recreate the two arcs of the circumference (upper and lower) missing from each image..
+        </p>
+        <!-- END SECTION-->
+
+
+        <!-- START SECTION-->
+        <h1 class="title">Training Machine Learning Models</h1>
+        <h1 class="title">Teachable Machine 1st Train With Image Classification - Gone Wrong</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/10_TM_IMGClassification_1st.mp4" type="video/mp4">
+        </video>
+        <h1 class="title">Teachable Machine 2nd Train With Image Classification - Gone Wrong</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/11_TM_IMGClassification_2nd.mp4" type="video/mp4">
+        </video>
+        <h1 class="title">Teachable Machine 3rd Train With Image Classification - Gone Wrong</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/12_TM_IMGClassification_3rd.mp4" type="video/mp4">
+        </video>
+        <h1 class="title">Teachable Machine - Definitive Train With Pose</h1>
+        <video controls autoplay muted loop>
+            <source src="src/RedVideo/9_TM_PoseTeachingDef_Speed.mp4" type="video/mp4">
+        </video>
+        <p>
+            After 3 trials with the "image classification method", I came to the conclusion that: <br>
+            to perform this type of tasks the best way is via the posenet framework, since it also allows the project to
+            be usable by others and not to be affected by different backgrounds, clothes, glasses etc.
+        </p>
+        <!-- END SECTION-->
+        <h1 class="title" style="margin-top:90px;font-weight: bold;">Thanks&nbsp;❤️</h1>
+        <!-- START FOOTER (Do not delete!)-->
+        <footer>
+            <p>Repository for the 2022 course play-pause-rewind-shuffle for SUPSI Bachelor of Arts SUPSI in Visual
+                communication. <br />© 2022-2023
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
+}
+
+#wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 650px;
+}
+
+h1 {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin-top: 30px;
+    color: rgb(0,0,0);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.caption {
+}
+
+img {
+    min-width: 100%;;
+    max-width: 100%;
+    margin-bottom: 5px; 
+    margin-top: 5px; 
+
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images > img{
+    width: 16%;
+    margin-right: 4px;
+    margin-bottom: 5px; 
+    min-width: inherit;;
+}
+
+video {
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0,0,255)
+    
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+@media (max-width:960px) { 
+
+    #back {
+        position: relative;
+        padding: 5px;
+        /* position: relative;
+        left: 0;
+        top: 0; */
+    }
+
+    
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 650px;
+    }
+}
+
+.button {
+    display: none;
+}

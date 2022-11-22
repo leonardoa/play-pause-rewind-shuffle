@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alessia La Rocca – Bluebeard</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Repository for the 2022 course play-pause-rewind shuffle for SUPSI Bachelor of Arts SUPSI in Visual communication">
+    <meta name="keywords" content="">
+    <meta name="language" content="english">
+    <meta name="web_author" content="Alessia La Rocca">
+    <meta name="copyright" content="Alessia La Rocca">
+    <link rel="icon" href="src/img/fav.png">
+    <link href="src/readme.css" rel="stylesheet" />
+
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <a href="https://github.com/leonardoa/play-pause-rewind-shuffle/">Back</a>
+    </div>
+    <div id="wrapper">
+        <h1>Alessia La Rocca<br />
+            Bluebeard</h1>
+        <p class="abstract">
+            What happens when you break down a fairy tale and put it back together in a different order? 
+            Bluebeard is the story of a bad man who tricked his wives with a bewitched key to kill those who disobeyed him. His last wife managed to escape from him, and his brothers killed him. Afterwards, she lived happily ever after with her lovely new husband.
+            In this project, the elements, divided into paragraphs, are represented by abstract illustrations describing the scene. The user can rearrange them, giving life to a new story.
+        </p>
+        <ul>
+            <li><a href="htps://pprs.0x000.ch/alessia-larocca">Link website</a></li>
+            <li><a href="https://github.com/leonardoa/play-pause-rewind-shuffle/alessia-larocca">Github</a></li>
+            <li><a href="src/img/bluebeard_print.png" download="bluebeard_print_a3">Download printable illustrations</a></li>
+        </ul>
+        <h1 class="title">Object</h1>
+        <img src="src/img/0.png" alt="immagine composta" />
+
+        <h1 class="title">Disassembled object</h1>
+        <div class="images">
+            <img src="src/img/0.png" alt="immagine scomposta" />
+            <img src="src/img/1.png" alt="immagine scomposta" />
+            <img src="src/img/2.png" alt="immagine scomposta" />
+            <img src="src/img/3.png" alt="immagine scomposta" />
+            <img src="src/img/4.png" alt="immagine scomposta" />
+            <img src="src/img/5.png" alt="immagine scomposta" />
+            <img src="src/img/6.png" alt="immagine scomposta" />
+            <img src="src/img/7.png" alt="immagine scomposta" />
+            <img src="src/img/8.png" alt="immagine scomposta" />
+            <img src="src/img/9.png" alt="immagine scomposta" />
+        </div>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">WEB PLATFORM</h1>
+        <video controls autoplay muted loop>
+            <source src="src/video/web_01.mp4" type="video/mp4">
+        </video>
+        <p>
+            The website subdivides Bluebeard's fairytale and the user navigates by reading it at first following the order of events.
+            The page is surfable through the camera and uses the image recognition of Google Teachable Machine.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/web_02.mp4" type="video/mp4">
+        </video>
+        <p>
+            After activating the shuffle it is possible to read the story with a new order, this to see if it can also make sense with another sequence.
+        </p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">SHUFFLE</h1>
+        <img src="src/img/shuffle.png" alt="play 1" />
+        <p class="caption">
+            By showing the camera the shuffle symbol, the elements change order randomly.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/shuffle.mp4" type="video/mp4">
+        </video>
+        <!-- END SECTION-->
+         <!-- START SECTION-->
+         <h1 class="title">ZOOM IN</h1>
+         <img src="src/img/0.png" alt="play 1" />
+        <p class="caption">
+            Each illustration leads to the part of the story with the corresponding symbol. 
+        </p>
+         <video controls autoplay muted loop>
+             <source src="src/video/zoom_in.mp4" type="video/mp4">
+         </video>
+         <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">PREVIOUS</h1>
+        <img src="src/img/prev.png" alt="play 1" />
+        <p class="caption">
+            The 'previous' symbol navigates between elements by loading the previous page. Holding it in place changes the page every two seconds, it is possible to remove it from the camera in order to have more time to read.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/prev.mp4" type="video/mp4">
+        </video>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">NEXT</h1>
+        <img src="src/img/next.png" alt="play 1" />
+        <p class="caption">
+            The 'next' symbol has the same function as 'previous' but navigates forward.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/next.mp4" type="video/mp4">
+        </video>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">PROCESS</h1>
+        <p class="caption">
+            The illustrations were created by subdividing the story into paragraphs and representing the scene in an abstract manner. 
+            The shapes are constructed according to the content, for example, when Bluebeard delivers the keys, the bewitched one is the only one different from the others, and when it is stained with blood the shape changes irreversibly. 
+            These are printed in order to interact with the website. 
+            <br>Download the printable A3 file <a class="link" href="src/img/bluebeard_print.png" download="bluebeard_print_a3">here</a>.
+        </p>
+        <img src="src/img/bluebeard_print.png" alt="play 1" />
+        <p class="caption">
+            After creating and printing the illustrations, the Google Teachable Machine was trained using the image recognition function. 
+            Machine learning was implemented within the site in order to match the created labels to user interactions.
+            Each symbol has approximately 1400 samples in order to make the recognition as accurate as possible.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/proc.mp4" type="video/mp4">
+        </video>
+        <!-- END SECTION-->
+        <!-- START FOOTER (Do not delete!)-->
+        <footer>
+            <p>Repository for the 2022 course play-pause-rewind-shuffle for SUPSI Bachelor of Arts SUPSI in Visual
+                communication. <br/>© 2022-2023
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

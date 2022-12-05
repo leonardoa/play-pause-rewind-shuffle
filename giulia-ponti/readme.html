@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giulia Ponti – Sgr A* </title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Repository for the 2022 course play-pause-rewind shuffle for SUPSI Bachelor of Arts SUPSI in Visual communication">
+    <meta name="keywords" content="">
+    <meta name="language" content="english">
+    <meta name="web_author" content="Name surname">
+    <meta name="copyright" content="Name surname">
+    <link rel="icon" href="src/img/fav.png">
+    <link href="src/readme.css" rel="stylesheet" />
+
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <a href="https://github.com/leonardoa/play-pause-rewind-shuffle/">Back</a>
+    </div>
+    <div id="wrapper">
+        <h1>Giulia Ponti<br />
+            Sgr A*</h1>
+        <p class="abstract">
+            Beginning with a broad view of the Milky Way, we dive into the dense clouds of gas and dust at our galactic centre, 
+            zooming into the black hole Sgr A* at the centre of our galaxy. Distance is what characterises the relationship 
+            between man and the Universe, which is why the journey to the black hole will be possible through machine learning, 
+            using approaching movements towards the computer, trying to conceptually remove the light years between us and the element.
+        </p>
+        <ul>
+            <li><a href="https://pprs.0x000.ch/giulia-ponti">Link website</a></li>
+            <li><a href="https://github.com/leonardoa/play-pause-rewind-shuffle/giulia-ponti">Github</a></li>
+        </ul>
+        <h1 class="title">Object</h1>
+        <video controls autoplay muted loop>
+            <source src="src/video/1.mp4" type="video/mp4">
+        </video>
+
+        <h1 class="title">Disassembled object</h1>
+        <section id="container">
+		<ul id="list">
+	
+		</ul>
+
+        <!-- <div class="images">
+            <img src="src/img/frame_1.jpg" alt="immagine scomposta" />
+            <img src="src/img/frame_2.jpg" alt="immagine scomposta" />
+            <img src="src/img/frame_3.jpg" alt="immagine scomposta" />
+
+        </div> -->
+
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">WEB PLATFORM</h1>
+        <p>
+            The machine learning approach, using distance, allows the user to become an active part of the journey to the black hole. 
+            He doesn't only have to play a video, but he has the possibility to choose where to move and where to stop, 
+            focusing on the frame that interests him most.
+        </p>
+        <video controls autoplay muted loop>
+            <source src="src/video/2.mp4" type="video/mp4">
+        </video>
+        <p>
+            The camera moves back and forth, which is why distance is what make the experience possible. 
+            The user will have to move his face closer to or further away from the screen to start or go back on his journey.
+            This experience is possible by using poseNet library. Pose estimation is the task of using an ML model to estimate the pose 
+            of a person from an image or a video by estimating the spatial locations of key body joints (keypoints).
+        </p>
+    
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">PLAY</h1>
+        <video controls autoplay muted>
+            <source src="src/video/3.mp4" type="video/mp4">
+        </video>
+        <p>
+            The user can choose the moment from which to start playing the video by selecting the starting frame. 
+            Getting closer to the screen, next frames will be displayed at a speed sufficient to play the video.
+            If none of the frame is selected, once the face is close enough to the screen, the video will start from the first one.
+            
+        </p>
+        <video controls autoplay muted>
+            <source src="src/video/4.mp4" type="video/mp4">
+        </video>
+        <p class="caption">
+            PoseNet indentify the position of the eyes and nose and then calculates the distance between these two points.
+            In this way it calculates how far the user is from the screen, the higher is the distance between the eye and nose, the closer the user will be and vice versa.
+            The code specifies the distance within which the video have to start, in this case if the distance is between 40 and 100 then the next frame can be displayed.
+            At the same distance sound will start too to accompanying the user through his journey.
+        </p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">SHUFFLE</h1>
+        <img src="src/img/1.png" alt="shuffle" />
+        <p class="caption">
+            Changing the size of the window the frame's order will be randomize.
+            The order of the images keeps updating in random order for as long as the window size is smaller 
+            than a given value specified in the code.
+        </p>
+        <video controls autoplay muted>
+            <source src="src/video/6.mp4" type="video/mp4">
+        </video>
+        <p class="caption">
+            Once the order of the frames is changed, the story of the video also changes.
+            This is in fact disassembled and reassembled in random order, changing the logical sense of the journey.
+        </p>
+        <!-- END SECTION-->
+        <!-- START SECTION-->
+        <h1 class="title">REWIND</h1>
+        <video controls autoplay muted>
+            <source src="src/video/7.mp4" type="video/mp4">
+        </video>
+        <p class="caption">
+            The distance value is also used for the rewind function.
+            The value of the distance between the left eye and the nose makes possibile to recognize how fare the user is positioned.
+        </p>
+        <video controls autoplay muted>
+            <source src="src/video/8.mp4" type="video/mp4">
+        </video>
+        <p>
+            If the distance has a smaller value than the value defined in the code, 
+            then the frames preceding the current one will be displayed.
+            The action of moving away from the screen will then allow to move away from the black hole.
+            The actions performed by the user are linked to what they see on the screen.
+        </p>
+        <!-- END SECTION-->
+        <!-- START FOOTER (Do not delete!)-->
+        <footer>
+            <p>Repository for the 2022 course play-pause-rewind-shuffle for SUPSI Bachelor of Arts SUPSI in Visual
+                communication. <br/>© 2022-2023
+            </p>
+        </footer>
+    </div>
+</body>
+<script src="src/appreadme.js"></script>
+
+</html>

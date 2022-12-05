@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CC - Leonardo Angelucci</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Machine Learning with teachablemachine and player">
+	<meta name="keywords" content="Machine Learning, Play, Random, Next, Zoom, Teachable Machine, Posenet, tensorflowjs">
+	<meta name="web_author" content="Alessandro Plantera">
+	<meta name="copyright" content="Leonardo Angelucci">
+	<link href="src/style.css" rel="stylesheet" />
+</head>
+
+
+<body>
+<section id="preloader" class=""> 
+<video autoplay muted id="myvideo"> <source src="/src/preloader/14.mp4"></video>
+</section>
+	<section id="container">
+		<div class="fullscreenSVG" alt="Go Full Screen" title="Go Full Screen">
+			<a id="togglefullscreen">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+					<g>
+						<g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+							<path fill=""
+								d="M6472.3,4526.9v-483.1h878.8h881.1L6971.5,2783.1L5713.1,1524.8l349.7-352l352-349.7l1258.4,1258.4l1260.7,1260.6v-881.1v-878.8h483.1H9900v1713.9V5010H8186.2H6472.3V4526.9z" />
+							<path fill=""
+								d="M2324.6-1863.8L1066.2-3122.2v881.1v878.8H583.1H100v-1713.8V-4790h1713.8h1713.9v483.1v483.1h-878.8h-881.1L3017-2574.6c685.5,685.5,1246.9,1258.4,1246.9,1269.9c0,13.8-151.8,177.1-340.5,363.5l-338.2,338.2L2324.6-1863.8z" />
+						</g>
+					</g>
+				</svg>
+			</a>
+		</div>
+		<ul id="list">
+			<!-- 
+			<li class="list-item" id="1">
+				<div class="item">1</div>
+			</li>
+
+			<li class="list-item" id="2">
+				<div class="item">2</div>
+			</li>
+			<li class="list-item" id="3">
+				<div class="item">3</div>
+			</li>
+			<li class="list-item" id="4">
+				<div class="item">4</div>
+			</li>
+			<li class="list-item" id="5">
+				<div class="item">5</div>
+			</li>
+			<li class="list-item" id="6">
+				<div class="item">6</div>
+			</li>
+			<li class="list-item" id="7">
+				<div class="item">7</div>
+			</li>
+			<li class="list-item" id="8">
+				<div class="item">8</div>
+			</li> -->
+		</ul>
+		<div class="contInfo" id="contInfo">
+			<div class="titolo">
+				300μ/PL 4x/0.10~
+			</div>
+			<div class="sottotitolo">
+				Alice Mioni
+			</div>
+		</div>
+		<section>
+			<button id="shuffle">SHUFFLE</button>
+			<button id="next">NEXT</button>
+			<button id="prev">PREV</button>
+		</section>
+		<div>Teachable Machine Pose Model</div>
+		<button type="button" onclick="init()">Start</button>
+		<div><canvas id="canvas"></canvas></div>
+		<div id="label-container"></div>
+		<aside id="tools">
+			<div>
+				<p>Alessandro Plantera</p>
+			</div>
+			<div id="tools-name">
+				<p>Machine Learning: Play, Random, Next, Zoom</p>
+			</div>
+			<div>
+				<p id="tools-data">NO DATA</p>
+			</div>
+		</aside>
+</body>
+<!-- Preloader -->
+<script>
+	setTimeout(()=>{
+			//hide the preloader
+			console.log("carico")
+			document.getElementById("preloader").classList.add("preloaderNone");
+			},3000)
+</script>
+<!-- TF JS & P5 -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<!---->
+<script src="src/p5.js"></script>
+<script src="src/app.js"></script>
+
+</html>

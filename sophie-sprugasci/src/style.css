@@ -15,6 +15,11 @@ html {
 	overflow-x: hidden; 
 }
 
+@font-face {
+	font-family: 'Digital-7';
+	src: url(digital-7.otf);
+  }
+
 #container {
 	position: relative;
 	width: 100vw;
@@ -115,8 +120,7 @@ html {
 	right: 785px;
 	bottom: 10px;
 	z-index: 10000;
-	font-family: Digital-7;
-	src: url(digital-7.ttf);
+	font-family: 'Digital-7';
 	font-size: 25pt;
 	background-color: transparent;
 	color: red;
